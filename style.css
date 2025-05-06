@@ -6,6 +6,8 @@ body{
     padding: 0;
     background-color: var(--White2);
     font-family: "Poppins", sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 :root{
 --Red: hsl(0, 78%, 62%);
@@ -163,6 +165,14 @@ header p{
 @media(max-width:600px){
     body{
         padding-top: 30px;
+        overflow-x: hidden; /* يمنع السكول الجانبي */
+        
+    }
+    .Reliable{
+        font-size: 20px;
+    }
+    .Powered{
+        font-size: 20px;
     }
     header h1{
         width: 100%;
@@ -170,17 +180,20 @@ header p{
         justify-content: center;
     }
     header div{
-        width: 90%;
-        margin: 0 2px 0 14px;
+        width: 96%;
+        padding: 0 16px;
     }
     header div p{
-        font-size: 16px;
+        font-size: 15px;
+        margin-left: 20px;
+        margin-right: 5px;
     }
     .cards{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4 , 1fr);
-        margin: 8px 10px 1px 48px;
+        margin: 8px 51px;
+        transform: translate(18px, 10px);
     }
     .Supervisor{
         grid-area: 1/1/2/1;
@@ -193,5 +206,13 @@ header p{
     }
     .Calculator{
         grid-area: 4/1/5/1;
+    }
+    .Supervisor,
+    .Team,
+    .Karma,
+    .Calculator {
+        width: 110%;
+        max-width: 123%;
+        margin: 0 auto;
     }
 }
