@@ -193,7 +193,7 @@ header p{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4 , 1fr);
         margin: 8px 51px;
-        transform: translate(18px, 10px);
+        transform: translate(14px, 10px);
     }
     .Supervisor{
         grid-area: 1/1/2/1;
